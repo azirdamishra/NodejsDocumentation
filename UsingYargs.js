@@ -1,5 +1,11 @@
 console.log('Starting app.js');
 
+/*
+Yargs is a 3rd party npm module which makes the process of parsing much easier. It lets us access title and body info without needing to write a manual parser. 
+Yargs.argv is where the yargs library stores its version of the command line arguments
+It can parse the string properly even when we enter it in different ways. 
+*/
+
 const fs = require('fs');
 const _ = require('lodash');
 const yargs = require('yargs');
@@ -23,3 +29,6 @@ if(command === 'list'){
 } else{
     console.log('Command not recognized');
 }
+
+
+
