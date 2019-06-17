@@ -1,3 +1,5 @@
+//this file is just an introduction to working with JSON
+
 /*
 var obj = {
     name: 'Adriza'
