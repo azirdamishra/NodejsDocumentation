@@ -1,3 +1,8 @@
+//no change made in app.js 
+/* in this wode we have added and read notes using JSON and tried to counter error of no initial file for reading, 
+reading corrupted data --> for this we have used try catch , and how to not write the note in the file created if the 
+title of the note is the same */
+
 console.log('starting notes.js');
 
 const fs = require('fs');
@@ -20,8 +25,15 @@ var addNote = (title, body) => {
     } catch (e) {
 
     }
+    
+    /* stores the notes already stored in the notes array that have the same title
+     as the note we are trying to create
+      notes.filter is an array method that takes in a singular argument for all the elements
+      of the array (but takes them all in one by one). it  returns true if the conditions
+      match and keeps that item in the array which gets stored in duplicate notes
+      Else duplicate notes will be empty*/
 
-    var duplicateNotes = notes.filter((note) => {
+    var duplicateNotes = notes.filter((note) => {   
         return note.title === title;
     });
     //the above statement written using es6 arrow functions will be
