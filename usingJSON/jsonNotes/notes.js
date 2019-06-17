@@ -32,6 +32,8 @@ var addNote = (title, body) => {
       of the array (but takes them all in one by one). it  returns true if the conditions
       match and keeps that item in the array which gets stored in duplicate notes
       Else duplicate notes will be empty*/
+    
+    //filter here checks the value of title against the value of note.title and returns a boolean
 
     var duplicateNotes = notes.filter((note) => {   
         return note.title === title;
