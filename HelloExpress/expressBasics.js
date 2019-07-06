@@ -13,7 +13,7 @@ app.get('/123', (req, res) => {
 });
 
 app.get('/234', (req, res) => {
-    res.send({
+    res.send({      //req is used to request to servers
         name: 'Adriza',
         likes: [
             'sports',
